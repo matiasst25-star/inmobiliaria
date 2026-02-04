@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Inmobiliaria - Asesoramiento profesional en compra, venta y alquiler de propiedades en Buenos Aires.">
+  <title>Inmobiliaria | Tu hogar ideal te espera</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-wide header-inner">
+      <a href="index.html" class="logo">Inmobiliaria</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="propiedades.html">Propiedades</a>
+        <a href="vender.html">Vender</a>
+        <a href="alquilar.html">Alquilar</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <a href="contacto.html" class="btn-primary btn-cta">Consultar</a>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Menú">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav hidden" id="mobile-nav">
+      <a href="index.html">Inicio</a>
+      <a href="propiedades.html">Propiedades</a>
+      <a href="vender.html">Vender</a>
+      <a href="alquilar.html">Alquilar</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" class="btn-primary">Consultar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-home">
+      <div class="hero-home-bg"></div>
+      <div class="hero-home-overlay"></div>
+      <div class="container-wide hero-home-content">
+        <span class="hero-label fade-in-up">Inmobiliaria de confianza</span>
+        <h1 class="font-serif fade-in-up delay-1">Encuentra tu hogar ideal <br>con asesoramiento experto</h1>
+        <p class="fade-in-up delay-2">Compra, vende o alquila con respaldo profesional. <br>Más de 15 años acompañando
+          operaciones exitosas en Buenos Aires.</p>
+        <div class="btns fade-in-up delay-3">
+          <a href="propiedades.html" class="btn-primary btn-shine">Ver propiedades</a>
+          <a href="contacto.html" class="btn-secondary">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container-wide">
+        <div class="stats-grid reveal-up">
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="15">0</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="500">0</span>
+            <span class="stat-label">Propiedades vendidas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="1200">0</span>
+            <span class="stat-label">Clientes satisfechos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number counter" data-target="98">0</span>
+            <span class="stat-label">% Satisfacción</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="section-padding" style="background: var(--cream);">
+      <div class="container-wide">
+        <div class="section-header reveal-up">
+          <span class="section-label">Propiedades destacadas</span>
+          <h2 class="font-serif">Selección exclusiva</h2>
+          <p>Las mejores oportunidades disponibles ahora. Actualizamos nuestra cartera constantemente.</p>
+        </div>
+        <div class="card-grid reveal-stagger" id="featured-props"></div>
+        <div class="section-cta reveal-up">
+          <a href="propiedades.html" class="btn-primary btn-shine">Ver todas las propiedades →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding services-section">
+      <div class="container-wide">
+        <div class="section-header reveal-up">
+          <span class="section-label">Nuestros servicios</span>
+          <h2 class="font-serif">Cómo podemos ayudarte</h2>
+        </div>
+        <div class="services-grid reveal-stagger">
+          <a href="propiedades.html" class="service-card">
+            <div class="service-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+            </div>
+            <h3>Comprar</h3>
+            <p>Encontramos la propiedad que se ajusta a tus necesidades y presupuesto.</p>
+            <span class="service-link">Ver propiedades →</span>
+          </a>
+          <a href="vender.html" class="service-card">
+            <div class="service-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3>Vender</h3>
+            <p>Valoración profesional y estrategia de venta para maximizar tu inversión.</p>
+            <span class="service-link">Comenzar →</span>
+          </a>
+          <a href="alquilar.html" class="service-card">
+            <div class="service-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path
+                  d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+              </svg>
+            </div>
+            <h3>Alquilar</h3>
+            <p>Gestión integral de alquileres: búsqueda de inquilinos, contratos y cobros.</p>
+            <span class="service-link">Más información →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="section-padding" style="background: var(--cream);">
+      <div class="container-wide">
+        <div class="why-us-grid">
+          <div class="why-us-content reveal-up">
+            <span class="section-label">¿Por qué elegirnos?</span>
+            <h2 class="font-serif">Experiencia que genera confianza</h2>
+            <p>No solo mostramos propiedades. Asesoramos, acompañamos y nos comprometemos con cada operación. Tu
+              tranquilidad es nuestra prioridad.</p>
+            <ul class="check-list">
+              <li>
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Respuesta en menos de 24 horas</span>
+              </li>
+              <li>
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Transparencia total en costos</span>
+              </li>
+              <li>
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Acompañamiento hasta la escritura</span>
+              </li>
+              <li>
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Equipo de asesores especializados</span>
+              </li>
+            </ul>
+            <a href="nosotros.html" class="btn-primary btn-shine" style="margin-top: 2rem;">Conocer más →</a>
+          </div>
+          <div class="why-us-image reveal-up delay-1">
+            <div class="image-card">
+              <div class="image-placeholder">
+                <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                  <path
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <div class="floating-card">
+                <span class="floating-number">+500</span>
+                <span class="floating-text">Operaciones exitosas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-bg"></div>
+      <div class="container-wide cta-content reveal-up">
+        <h2 class="font-serif">¿Listo para dar el siguiente paso?</h2>
+        <p>Contáctanos hoy y descubre cómo podemos ayudarte a encontrar tu próximo hogar.</p>
+        <div class="btns">
+          <a href="contacto.html" class="btn-primary btn-shine">Enviar consulta</a>
+          <a href="propiedades.html" class="btn-secondary" style="border-color: white; color: white;">Ver
+            propiedades</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-wide section-padding">
+      <div class="footer-grid">
+        <div>
+          <p class="brand">Inmobiliaria</p>
+          <p class="brand-desc">Asesoramiento profesional en compra, venta y alquiler. Su tranquilidad es nuestra
+            prioridad.</p>
+        </div>
+        <div>
+          <p class="foot-title">Navegación</p>
+          <ul>
+            <li><a href="propiedades.html">Propiedades</a></li>
+            <li><a href="vender.html">Vender</a></li>
+            <li><a href="alquilar.html">Alquilar</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="foot-title">Contacto</p>
+          <p style="font-size: 0.875rem;">consultas@inmobiliaria.com</p>
+          <p style="font-size: 0.875rem;">+54 11 1234-5678</p>
+          <a href="contacto.html" class="btn-primary" style="margin-top: 1rem;">Enviar consulta</a>
+        </div>
+      </div>
+      <p class="copy">© 2025 Inmobiliaria. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" id="whatsapp-float" aria-label="Consultar por WhatsApp">
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    // Load featured properties
+    (function () {
+      var featured = properties.slice(0, 3);
+      var grid = document.getElementById('featured-props');
+      if (grid) {
+        featured.forEach(function (p) {
+          var isRent = p.operation === 'alquiler';
+          var card = document.createElement('article');
+          card.className = 'property-card';
+          card.innerHTML = '<a href="propiedad.html?id=' + p.id + '"><div class="img-wrap" style="position:relative"><img src="' + (p.images && p.images[0]) + '" alt=""><span class="badge">' + (isRent ? 'Alquiler' : 'Venta') + '</span></div><div class="content"><h2>' + p.title + '</h2><p class="location">' + p.location + '</p><div class="meta"><span>' + p.rooms + ' amb.</span><span>' + p.bathrooms + ' baños</span>' + (p.coveredArea ? '<span>' + p.coveredArea + ' m²</span>' : '') + '</div><p class="price">' + formatPrice(p.price, p.currency) + '</p><span class="link">Ver detalle →</span></div></a>';
+          grid.appendChild(card);
+        });
+      }
+      // WhatsApp
+      var wa = document.getElementById('whatsapp-float');
+      if (wa) wa.href = window.INMO && window.INMO.whatsappUrl ? window.INMO.whatsappUrl() : '#';
+    })();
+  </script>
+</body>
+
+</html>
